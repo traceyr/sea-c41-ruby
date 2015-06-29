@@ -11,8 +11,8 @@
 #   WHADDAYA MEAN 'I WANT A RAISE'?!? YOU'RE FIRED!!
 
 puts "CAN'T YOU SEE I'M BUSY?! MAKE IT FAST, JOHNSON!"
-employeeAnswer = gets.chomp
+employee_answer = gets.chomp
 
-response = employeeAnswer.upcase
+response = employee_answer.upcase
 
 puts "WHADDAYA MEAN '#{response}'?!? YOU'RE FIRED!!"

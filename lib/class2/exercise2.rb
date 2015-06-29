@@ -4,7 +4,7 @@
 #
 # TIP: I expect you to use a mathematical equation.
 
-hourPerYear = 365 * 24
-minPerYear = hourPerYear * 60
-minPerDecade = minPerYear * 10
-puts minPerDecade
+hour_per_year = 365 * 24
+min_per_year = hour_per_year * 60
+min_per_decade = min_per_year * 10
+puts min_per_decade

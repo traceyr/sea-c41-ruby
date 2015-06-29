@@ -15,15 +15,15 @@
 #   Nice to meet you, Samuel Leroy Jackson.
 
 puts "What's your first name?"
-firstName = gets.chomp
-firstName.capitalize!
+first_name = gets.chomp
+first_name.capitalize!
 
 puts "What's your middle name?"
-middleName = gets.chomp
-middleName.capitalize!
+middle_name = gets.chomp
+middle_name.capitalize!
 
 puts "What's your last name?"
-lastName = gets.chomp
-lastName.capitalize!
+last_name = gets.chomp
+last_name.capitalize!
 
-puts "Nice to meet you, #{firstName} #{middleName} #{lastName}."
+puts "Nice to meet you, #{first_name} #{middle_name} #{last_name}."
