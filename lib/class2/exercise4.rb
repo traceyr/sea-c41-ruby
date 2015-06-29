@@ -13,3 +13,17 @@
 #   What's your last name?
 #   Jackson
 #   Nice to meet you, Samuel Leroy Jackson.
+
+puts "What's your first name?"
+firstName = gets.chomp
+firstName.capitalize!
+
+puts "What's your middle name?"
+middleName = gets.chomp
+middleName.capitalize!
+
+puts "What's your last name?"
+lastName = gets.chomp
+lastName.capitalize!
+
+puts "Nice to meet you, #{firstName} #{middleName} #{lastName}."

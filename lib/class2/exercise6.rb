@@ -9,3 +9,10 @@
 #   CAN'T YOU SEE I'M BUSY?! MAKE IT FAST, JOHNSON!
 #   i want a raise
 #   WHADDAYA MEAN 'I WANT A RAISE'?!? YOU'RE FIRED!!
+
+puts "CAN'T YOU SEE I'M BUSY?! MAKE IT FAST, JOHNSON!"
+employeeAnswer = gets.chomp
+
+response = employeeAnswer.upcase
+
+puts "WHADDAYA MEAN '#{response}'?!? YOU'RE FIRED!!"

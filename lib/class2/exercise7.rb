@@ -29,3 +29,14 @@
 #     Returns a new String of length Integer with `string` right justified.
 #
 #     'bird'.rjust(10)  #=> '      bird'
+
+lineWidth = 50
+lineOne = 'Table of Contents'.center(lineWidth)
+lineTwo = 'Chapter 1:  Getting Started'.ljust(30) + 'page  1'.rjust(20)
+lineThree = 'Chapter 2:  Numbers'.ljust(30) + 'page  9'.rjust(20)
+lineFour = 'Chapter 3:  Letters'.ljust(30) + 'page 13'.rjust(20)
+
+puts lineOne
+puts lineTwo
+puts lineThree
+puts lineFour
