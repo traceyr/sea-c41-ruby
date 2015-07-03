@@ -8,3 +8,13 @@
 # divisible by 400 (e.g. 2000).
 #
 # TIP: I expect you to use a loop and a few modulo operations.
+
+for x in (1900..2000)
+  if x % 400 == 0
+    puts x
+  elsif x % 100 == 0
+    #
+  elsif x % 4 == 0
+    puts x
+  end
+end
