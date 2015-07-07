@@ -28,7 +28,33 @@
 
 # rubocop:disable MethodLength
 def old_school_roman_numeral(num)
-  num # change me
+  roman = ''
+
+  m = num / 1000
+  roman = 'M' * m
+  num -= (m * 1000)
+
+  d = num / 500
+  roman += 'D' * d
+  num -= (d * 500)
+
+  c = num / 100
+  roman += 'C' * c
+  num -= (c * 100)
+
+  l = num / 50
+  roman += 'L' * l
+  num -= (l * 50)
+
+  x = num / 10
+  roman += 'X' * x
+  num -= (x * 10)
+
+  v = num / 5
+  roman += 'V' * v
+  num -= (v * 5)
+
+  roman + 'I' * num
 end
 
 input = ARGV[0].to_i
