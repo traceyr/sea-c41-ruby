@@ -10,16 +10,16 @@
 #
 #   $ ruby exercise6.rb 4 GONGGG!
 #   GONGGG!
-#   GONGGG!
-#   GONGGG!
-#   GONGGG!
-
 def grandfather_clock(hour, sound, &block)
   hour && sound && block # fix me
 end
 
 input1 = ARGV[0]
 input2 = ARGV[1]
+#   GONGGG!
+#   GONGGG!
+#   GONGGG!
+
 
 usage = 'Usage: exercise6.rb 1-12 SOUND'
 

@@ -6,15 +6,15 @@
 #
 #   /Users/tim/sea-c21-ruby
 #
-# Relative paths don't start with a `/`. For example
-#
-#   lib/class5/database.yml
-#
 # Write a program that displays the absolute path for anyone's
 # `lib/class5/database.yml` file.
 #
 # In other words, it needs to calculate an absolute path for
 # `lib/class5/database.yml` that'll work on anyone's filesystem.
+#
+# Relative paths don't start with a `/`. For example
+#
+#   lib/class5/database.yml
 #
 # So on Tim's laptop, it works like this:
 #
@@ -57,20 +57,20 @@
 #       'lib/class5/exercise2.rb'
 #
 #   File.dirname(long_path)  #=> shorter_path
-#
-#     Returns a `shorter_path` String with all components of the `long_path`
-#     String except the last one.
-#
+
 #     So if the program called:
 #
 #       File.dirname('/Users/tim/sea-c21-ruby/lib/class5/exercise2.rb')
 #
 #     It would return:
 #
-#       '/Users/tim/sea-c21-ruby/lib/class5/'
+#       '/Users/tim/sea-c21-ruby/lib/class5/'#
+#     Returns a `shorter_path` String with all components of the `long_path`
+#     String except the last one.
+#
 
 def database
-  '/change/me'
+  File.absolute_path('lib/class5/database.yml')
 end
 
 puts database
