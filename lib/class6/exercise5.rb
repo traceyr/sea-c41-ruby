@@ -22,15 +22,16 @@
 require 'yaml'
 
 def database
-  '/replace/me'
+  File.absolute_path('lib/class6/database.yml')
 end
 
 def load
-  { replace: 'me' }
+  read_string = File.read database
+  YAML.load read_string
 end
 
 def find(key)
-  key # fix me
+  load[key]
 end
 
 input = ARGV[0]

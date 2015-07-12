@@ -32,15 +32,18 @@
 require 'yaml'
 
 def database
-  '/replace/me'
+  File.absolute_path('lib/class6/database.yml')
 end
 
 def load
-  { fix: 'me' }
+  read_string = File.read database
+  YAML.load read_string
 end
 
 def display(pairs)
-  pairs # fix me
+  pairs.each do |k, v|
+    puts ":#{k} => #{v.inspect}"
+  end
 end
 
 person = load
